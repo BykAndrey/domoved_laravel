@@ -75,7 +75,6 @@ Route::match(['get','post'],'login','LoginController@index')->name('login');
 Route::get('logout','LoginController@logout')->name('logout');
 Route::post('changepass','LoginController@changepass')->name('changepass');
 
-Route::get('regist','LoginController@create');
 
 
 

@@ -40,15 +40,6 @@ class LoginController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        $user=new User();
-        $user->name='Andrey';
-        $user->email='andrey@mail.ru';
-        $user->password=bcrypt('password');
-        $user->save();
-        return 'Yes';
-    }
 
     /**
      * Store a newly created resource in storage.

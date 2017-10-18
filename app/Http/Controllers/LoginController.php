@@ -23,7 +23,7 @@ class LoginController extends Controller
         }
         if($request->isMethod('post')) {
             $pass=$request->input('password');
-            if (Auth::attempt(['email' => 'andrey@mail.ru', 'password' => $pass])) {
+            if (Auth::attempt(['email' => 'domoved@gmail.com', 'password' => $pass])) {
                 // Аутентификация успешна
                 return redirect(route('admin'));
 

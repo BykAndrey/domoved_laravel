@@ -27,7 +27,7 @@
     <div class="headtopmenu">
         <ul>
 
-            <li><a href="{{route('aboutsite',['name'=>'aboutcompany'])}}">Порядок оказания услуг</a></li>
+            <li><a href="{{route('aboutsite',['name'=>'procedure-provision-serv'])}}">Порядок оказания услуг</a></li>
             <li><a href="{{route('opinions')}}">Отзывы</a></li>
             <li><a href="{{route('questions')}}">Ответы на вопросы</a></li>
             <li class="town"><a href="#">Москва</a></li>
@@ -64,16 +64,14 @@
 
 
 <div class="content container">
-  <!--  {%breadcrops Crops%}
-    {% block 'content'%}
-    {% endblock %}-->
+
     @if(isset($crops))
         @include('breadcrops')
         @endif
     @yield('content')
 </div>
 <footer>
-    <div class="info"><h5><a href="{% url 'ServiceCategoryList' %}">Услуги</a></h5>
+    <div class="info"><h5><a href="{{route('service')}}">Услуги</a></h5>
         <ul>
 
     @foreach($footerServ as $item)
@@ -81,9 +79,9 @@
     @endforeach
         </ul>
     </div>
-    <div class="info"><h5><a href='{{route('aboutsite',['name'=>'contacts'])}}'>О компании</a> </h5>
+    <div class="info"><h5><a href='{{route('aboutsite',['name'=>'aboutcompany'])}}'>О компании</a> </h5>
         <ul>
-            <a href="{% url 'infopage' 'procedure-provision-serv'%}"><li>Порядок оказания услуг</li></a>
+            <a href="{{route('aboutsite',['name'=>'procedure-provision-serv'])}}"><li>Порядок оказания услуг</li></a>
             <a href="{{route('opinions')}}"><li>Отзывы</li></a>
             <a href="{{route('questions')}}"><li>Ответы на вопросы</li></a>
         </ul>

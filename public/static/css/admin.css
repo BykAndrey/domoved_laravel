@@ -1,0 +1,81 @@
+body {
+  width: 1200px;
+  margin: auto;
+}
+body input[type='submit'] {
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 600;
+}
+body header {
+  background-color: #2ca02c;
+}
+body header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+body header ul li {
+  margin-left: 10px;
+  list-style: none;
+}
+body header ul li a {
+  text-decoration: none;
+  color: wheat;
+  font-size: 14px;
+}
+body header .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body header .navigation a {
+  color: wheat;
+  font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+}
+body .content .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+body .content .options .option {
+  margin: 1%;
+  width: 23%;
+  text-align: center;
+  border: 1px solid rgba(1, 1, 1, 0.5);
+}
+body .content table {
+  width: 70%;
+}
+body .content table input {
+  width: 100%;
+}
+body .content #list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+body .content #list div {
+  margin: 10px;
+}
+body #tabs ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+body #tabs ul li {
+  padding: 10px;
+  list-style: none;
+}
